@@ -18,26 +18,67 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
+<form name="Formulario ejercicio"> 
+    <fieldset>
+        <legend>Usuario:</legend>
+        Usuario:
 Password:
 Confirmar Password:
+    </fieldset>
+    <fieldset>
+        <legend>Persona:</legend>
+        <label for="nombre"> Nombre:</label>
+        <input type="text" size="30" id="nombre" placeholder="Ingrese nombre "><br>
+        <label for="nombre"> Apellido:</label>
+        <input type="text" size="30" id="apellido" placeholder="Ingrese apellido "><br>
+        Edad:
+Email:
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
 
-Agregue un comentario:
+    </fieldset>
+    
+<fieldset>
+    <legend>Genero: </legend>
+    <label for="hombre">Hombre:</label>
+    <input type="radio" name="gender" value="masculino" > <br>
+<label for="mujer">Mujer:</label>
+<input type="radio" name="gender" value="femenino" > <br>
+<label for="otro">Otro:</label>
+<input type="radio" name="gender" value="nobinario" > <br>
+
+</fieldset>
+
+
+<fieldset>
+    <legend>Servicio:</legend>
+
+    <select name="Servicio">
+        
+        <option value="Free">Free</option>
+        <option value="Standard">Standard</option>
+        <option value="Premiun">Premiun</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <legend>Tema:</legend>
+
+    <select name="Servicio">
+        
+        <option value="politica">Politica</option>
+        <option value="negocios">Negocios</option>
+        <option value="tecnologia">Tecnologia</option>
+        <option value="salud">Salud</option>
+    </select>
+</fieldset>
+<br>
+<textarea name="comentarios" rows="10" cols="40" placeholder="Comentarios"></textarea>
+<br><br>
 
 Boton de Enviar
 
+
+</form>
 
 </body>
 </html>
