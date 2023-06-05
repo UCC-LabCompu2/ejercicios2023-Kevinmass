@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+}
+
+li.nav-link {
+
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    font-family: 'Cinzel', serif;
+
+
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.5;
+}
+
+nav ul li a:hover {
+    -webkit-text-stroke: 0.5px white;
+
+}
+
+div.container {
+    width: 1280px;
+    margin: auto;
+}
+
+nav#navbar {
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav#navbar .logo {
+    width: 70px;
+
+}
+
+div.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+@media(max-width:1280px) {
+    div.container {
+        width: 100%;
+    }
+}
+
+div#CaraPrincipal {
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 0 5%;
+    margin-top: 70px;
+    height: 1000px;
+    background-image: url(https://costar.brightspotcdn.com/dims4/default/43821f4/2147483647/strip/true/crop/880x495+0+27/resize/1200x675!/quality/90/?url=http%3A%2F%2Fcostar-brightspot.s3.amazonaws.com%2Ffd%2F74%2F6644babf474bb779d612483934e2%2Fgettyimages-970837026-880x548.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.registrodelivery {
+    padding: 35px;
+    height: 800px;
+    width: 900px;
+    background-color: rgba(86, 86, 86, 0.726);
+}
+
+div .bebidas {
+
+    padding: 40px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+div .bebidas label {
+
+    font-size: 15px;
+
+}
+
+div .comida {
+
+    padding: 40px;
+
+
+}
+
+div .comida label {
+
+    padding: 40px;
+    font-size: 15px;
+
+
+}
+
+div.registrodelivery h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+footer#FooterUnico {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: auto;
+    height: 1000px;
+    background-color: rgb(10, 10, 10);
+}
+
+div.InfoRes {
+
+    display: inline-block;
+    padding: 5px;
+}
+
+div.Redes {
+    display: inline-block;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.InfoRes h3 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+div.InfoRes h4 {
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+div.InfoRes h5 {
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+
+div.Redes a.Intro {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+nav#navred img.Logo1 {
+
+    height: 30px;
+    width: 30px;
+}
+
+div.creadores {
+    padding: 110px;
+}
+
+div.creadores h6 {
+    color: beige;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    transition: 0.5;
+}
+
+div.creadores h5 a {
+    padding: 15px;
+    color: beige;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Cinzel', serif;
+    transition: 0.5;
+}
+
+div.creadores h5 a:hover {
+    -webkit-text-stroke: 0.5px white;
+
+}
+
+div.Contactanos {
+
+    display: block;
+    align-items: center;
+
+}
+
+div.Contactanos form {
+    position: static;
+
+}
+
+form input {
+
+    width: 30%;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+
+}
+
+form input.btn {
+    width: 10%;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+}
+
+
+
+form textarea {
+
+    border: none;
+    resize: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+
+
+}
+
+
+form label {
+    padding: 50px;
+    color: beige;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Cinzel', serif;
+
+}
+
+div.Contacto {
+
+    display: block;
+    padding: 5px;
+
+}
+
+div.Contacto h3 {
+
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+
+}

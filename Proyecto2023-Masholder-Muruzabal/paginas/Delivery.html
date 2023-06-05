@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Delivery</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Juan Muruzabal y Kevin Massholder">
+    <meta name="keywords" content="Continental, Restaurante Continental">
+    <link rel="stylesheet" type="text/css" href="Delivery_Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg"/>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <a href="../Index.html" target="_self">
+                    <img src="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg" class="logo" alt="Imagen Logo">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-link"><a href="../paginas/Carta.html">CARTA</a></li>
+                    <li class="nav-link"><a href="#ancla-delivery">DELIVERY</a></li>
+                    <li class="nav-link"><a href="../paginas/Reserva.html">RESERVA</a></li>
+                    <li class="nav-link"><a href="#ancla-contacto">CONTACTO</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="CaraPrincipal">
+            <div class="registrodelivery">
+                <h2>DELIVERY</h2>
+
+                <div class="delivery">
+
+                    <form class="cuadro" action="">
+                        <label for="Nombre y Apellido"> Nombre y Apellido: </label><br>
+                        <input type="" placeholder="Nombre" required><br>
+                        <label for="Email"> Correo electronico: </label><br>
+                        <input type="email" name="email" id="" placeholder="Correo electronico" required><br>
+                        <label for="Telefono Celular">Telefono Celular: </label><br>
+                        <input type="number" placeholder="Ej: 351 6517698"><br>
+                        <label for="Direccion"> Direccion del envio: </label><br>
+                        <input type="" placeholder="Direccion de envio" required><br>
+                        <div class="comida">
+                            <label for="tipo de Ensalada">Seleccione la Ensalada</label>
+                            <select name="Ensalada" id="Ensalada">
+                                <option value="None">//</option>
+                                <option value="Caprese">Caprese</option>
+                                <option value="Caesar">Caesar</option>
+                                <option value="Kartoffelsalat">Kartoffelsalat</option>
+                                <option value="Waldorf">Waldorf</option>
+                            </select>
+                            <label for="tipo de Sandwich">Seleccione el Sandwich</label>
+                            <select name="Sandwich" id="Sandwich">
+                                <option value="None">//</option>
+                                <option value="Cubano">Cubano</option>
+                                <option value="Heisenberg">Rucula y Pera</option>
+                                <option value="Lionel Messias">Lionel Messias</option>
+                                <option value="Pollo Crocante">Pollo Crocante</option>
+                            </select> <br>
+                        </div>
+                        <p>
+
+
+                        <p>
+                        <div class="bebidas">
+                            <label for="tipo de Bebida">Seleccione la Bebida</label>
+                            <select name="Bebidas" id="Bebida">
+                                <option value="None">//</option>
+                                <option value="Moscatto">Moscatto</option>
+                                <option value="Heisenberg">Heisenberg</option>
+                                <option value="Aperol">Aperol</option>
+                                <option value="Jagermeister">Jagermeister</option>
+                                <option value="Santa Julia">Santa Julia</option>
+                                <option value="Whisky Blend">Whisky Blend</option>
+                            </select> <br>
+                        </div>
+                        
+
+                        <label for="Consderaciones de Envio"> Explicaciones para el repartidor: </label><br>
+                        <textarea name="" id="envio" cols="30" rows="10" placeholder="Introduzca la consideracion"
+                            required>
+                        </textarea><br>
+                        <input type="submit" name="" value="enviar" class="btn">
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <footer id="FooterUnico">
+            <div class="InfoRes">
+                <a name="ancla-contacto"></a>
+                <h3>SOBRE NOSOTROS</h3><br>
+                <h4>UBICACION</h4>
+                <h5>Av. Poeta Leopoldo Lugones 352</h5>
+                <h4>HORARIOS</h4>
+                <h5>De lunes a domingo desde las 12 p.m hasta las 1 a.m </h5>
+
+                <div class="Redes">
+                    <a class="Intro"> Nuestras redes </a>
+
+                    <nav id="navred">
+                        <a href="Index.html" target="_self">
+                            <img src="https://www.adverthia.com/wp-content/uploads/2020/02/instagram-logo-png-transparent-background-1024x1024-1.png"
+                                class="Logo1" alt="Link a la pagina de instagram">
+
+                        </a>
+                        <a href="Index.html" target="_self">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png"
+                                class="Logo1" alt="Link a la pagina de facebook">
+                        </a>
+
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="Contacto">
+
+                <h3>CONTACTO</h3>
+
+            </div>
+
+            <div class="Contactanos">
+
+                <form class="cuadro" action="">
+                    <label for="Nombre y Apellido"> Nombre y Apellido: </label><br>
+                    <input type="" placeholder="Nombre" required><br>
+                    <label for="Email"> Correo electronico: </label><br>
+                    <input type="email" name="email" id="" placeholder="Correo electronico" required><br>
+                    <label for="Telefono Celular">Telefono Celular: </label><br>
+                    <input type="number" placeholder="Ej: 351 6517698"><br>
+                    <label for="Nota">Dejanos una nota: </label><br>
+                    <textarea name="" id="envio" cols="30" rows="10" placeholder="Introduzca la nota" required>
+
+
+                </textarea><br>
+                    <input type="submit" name="" value="enviar" class="btn">
+
+                </form>
+
+
+            </div>
+
+            <div class="creadores">
+                <h6>Esta pagina fue hecha por :</h6>
+                <h5><a href="2203817@ucc.edu.ar" target="_top" alt="Enlace al mail de Kevin Massholder">
+                        Kevin Massholder
+                    </a>
+                    <br>
+                    <a href="2213345@ucc.edu.ar" target="_top" alt="Enlace al mail de Juan Muruzabal">
+                        Juan Ignacio Muruzabal
+                    </a>
+                </h5>
+            </div>
+
+        </footer>
+</body>
+
+</html>
