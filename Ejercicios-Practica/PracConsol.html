@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="Prac1.js"></script>
+</head>
+<body onload="inicialize();">
+    <H1>Consolador de Javascript</H1>
+    <button id="onTimeButton">First time only</button>
+    
+    <div style="border: 1px solid black;padding:8px" onmousemove="showCoords(event)" onmouseout="clearCoor()">
+
+        <p>Mouse over this box to display the horizontal and vertical coordinates of the mouse pointer.</p>
+        </div>
+        
+        <p id="demo"></p>
+
+        <div style="text-align: left; display: inline-block; margin: auto;">
+            <input type="radio" name="velocidad" value="Vinicial" onclick="seMuestra(this.value)">Velocidad Inicial
+            <input type="radio" name="velocidad" value="Vfinal" onclick="seMuestra(this.value)">Velocidad Final
+            <input type="radio" name="velocidad" value="NingunaV" onclick="seMuestra(this.value)">Ninguna Velocidad
+            <input type="radio" name="distancia" value="Dinicial" onclick="seMuestra(this.value)">Distancia Inicial
+            <input type="radio" name="distancia" value="Dfinal" onclick="seMuestra(this.value)">Distancia FInal
+        </div>
+        <div id="variasCosas1" style="display: none; background-color: #0d99a5">
+        Aca hay valores de Velocidad! O mas radios, o algo xD
+        </div>
+        <div id="variasCosas2" style="display: none; background-color: #1b91ff">
+        Aca hay valores de Distancia! O mas radios, o algo xD
+        </div>
+
+</body>
+</html>
+
+
+GuardarLocalStorage()
+CargarLocalStorage()
