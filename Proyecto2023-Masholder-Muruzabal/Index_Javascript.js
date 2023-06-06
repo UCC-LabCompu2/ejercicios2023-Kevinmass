@@ -43,12 +43,11 @@ GuardarLocalStorage = () => {
 /**
  * Muestra y oculta un la opcion de elegir comida directo del menu
  * @method Fmuestra
- * @param {string} value valor asignado a cada boton para poder distinguirlos
+ * @param {string} valor valor asignado a cada boton para poder distinguirlos
  * @return 
  */
 Fmuestra = (valor) => {
-    let Nombre, Email, Telefono, direccion;
-    var llave = '0';
+    let Nombre, Email, Telefono, direccion, llave;
     if (valor === 'BotonDelivery') {
         Nombre = document.getElementById("NameDelivery").value;
         Email = document.getElementById("EmailDelivery").value;

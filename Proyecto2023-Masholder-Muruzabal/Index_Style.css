@@ -331,18 +331,6 @@ div.registrodelivery {
     background-color: rgba(86, 86, 86, 0.726);
 }
 
-div .bebidas {
-    padding: 40px;
-    font-size: 15px;
-    color: white;
-    font-weight: 500;
-    font-family: 'Cinzel', serif;
-}
-
-div .bebidas label {
-    font-size: 15px;
-}
-
 div .comida {
     padding: 40px;
 }
@@ -399,7 +387,7 @@ div.registroreserva h2 {
     font-family: 'Cinzel', serif;
 }
 
-div.reserva {
+div#reserva {
     opacity: 0;
     display: block;
     align-items: center;
