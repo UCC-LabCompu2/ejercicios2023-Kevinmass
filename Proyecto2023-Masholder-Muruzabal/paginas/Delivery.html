@@ -6,6 +6,8 @@
         <meta charset="UTF-8">
         <meta name="autor" content="Juan Muruzabal y Kevin Massholder">
         <meta name="keywords" content="Continental, Restaurante Continental">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../Index_Style.css" />
         <script type="text/javascript" src="../Index_Javascript.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,12 +56,14 @@
                                 placeholder="Correo electronico" required><br>
                             <label for="PhoneDelivery">Telefono Celular:</label><br>
                             <input type="tel" id="PhoneDelivery"
-                                placeholder="Ej: 351 6517698"><br>
+                                placeholder="Ej: 351 6517698"
+                                onchange="ChequeoValores(this.id, this.value, 'numero')"><br>
                             <label for="DirectionDelivery"> Direccion del envio:</label><br>
                             <input type="text" id="DirectionDelivery"
                                 placeholder="Direccion de envio" required><br>
                             <div class="comida">
-                                <Button onclick="Fmuestra('BotonDelivery')">Seleccione su comida</Button>
+                                <button onclick="Fmuestra('BotonDelivery')">Seleccione
+                                    su comida</button>
                             </div>
                             <label for="EnvioDelivery"> Explicaciones
                                 para el repartidor: </label><br>
@@ -122,12 +126,14 @@
                         placeholder="Correo electronico" required><br>
                     <label for="Telefono">Telefono Celular: </label><br>
                     <input type="tel" id="Telefono"
-                        placeholder="Ej: 351 6517698"><br>
+                        placeholder="Ej: 351 6517698"
+                        onchange="ChequeoValores(this.id, this.value, 'numero')"><br>
                     <label for="Nota">Dejanos una nota: </label><br>
                     <textarea id="Nota" cols="30" rows="10"
                         placeholder="Introduzca la nota" required>
                     </textarea><br>
                     <button onclick="GuardarLocalStorage()">Enviar</button>
+                    <div id="EnviadoContacto">Enviado!</div>
                 </form>
             </div>
 

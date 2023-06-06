@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="autor" content="Juan Muruzabal y Kevin Massholder">
         <meta name="keywords" content="Continental, Restaurante Continental">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../Index_Style.css" />
         <script type="text/javascript" src="../Index_Javascript.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +21,7 @@
             href="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg" />
     </head>
 
-    <body onload="CargarLocalStorage()">
+    <body onload="CargarLocalStorage(), CartaOnload()">
         <header>
             <div class="container">
                 <nav id="navbar">
@@ -66,28 +67,28 @@
                         <th></th>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Caprese</label></td>
                             <td></td>
                             <td>20</td>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Caesar</label></td>
                             <td></td>
                             <td>12</td>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Kartoffelsalat</label></td>
                             <td></td>
                             <td>12</td>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Waldorf</label></td>
                             <td></td>
                             <td>10</td>
@@ -100,28 +101,28 @@
                         <th></th>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Cubano</label></td>
                             <td></td>
                             <td>40</td>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Rucula y Pera</label></td>
                             <td></td>
                             <td>60</td>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Lionel Messias</label></td>
                             <td></td>
                             <td>300</td>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Pollo Crocante</label></td>
                             <td></td>
                             <td>12</td>
@@ -133,25 +134,25 @@
                         </th>
                         <th></th>
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Moscatto........100</label></td>
                             </td>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Heisenberg........120</label></td>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Aperol........144</label></td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Jagermeister........122</label></td>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Santa Julia........7</label></td>
-                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                            <td><input type="checkbox" class="MenuEspecial" >
                                 <label for="scales">Whisky Blend........1000</label></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td> <button class="MenuEspecial" onclick="Fmuestra('BotonMenu')"> Volver al Delivery</button></td>
+                            <td> <button id="BotonDelivery" onclick="Fmuestra('BotonMenu')"> Volver al Delivery</button></td>
                             <td></td>
                         </tr>
                     </table>
@@ -207,12 +208,13 @@
                         placeholder="Correo electronico" required><br>
                     <label for="Telefono">Telefono Celular: </label><br>
                     <input type="tel" id="Telefono"
-                        placeholder="Ej: 351 6517698"><br>
+                        placeholder="Ej: 351 6517698" onchange="ChequeoValores(this.id, this.value, 'numero')" required><br>
                     <label for="Nota">Dejanos una nota: </label><br>
                     <textarea name id="Nota" cols="30" rows="10"
                         placeholder="Introduzca la nota" required>
                     </textarea><br>
                     <button onclick="GuardarLocalStorage()">Enviar</button>
+                    <div id="EnviadoContacto">Enviado!</div>
                 </form>
 
             </div>
@@ -227,6 +229,6 @@
             </div>
 
         </footer>
+        
     </body>
-
 </html>

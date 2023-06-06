@@ -255,20 +255,20 @@ OpMatematicas2 = (nombre) => {
     if (nombre == "resta") {
         num1 = Number(document.getElementById("numr1").value);
         num2 = Number(document.getElementById("numr2").value);
-        sum = num1 - num2;
-        document.getElementsByName("res_total")[0].innerHTML = sum;
+        res = num1 - num2;
+        document.getElementsByName("res_total")[0].innerHTML = res;
     }
     if (nombre == "multi") {
         num1 = Number(document.getElementById("numm1").value);
         num2 = Number(document.getElementById("numm2").value);
-        sum = num1 * num2;
-        document.getElementsByName("mul_total")[0].innerHTML = sum;
+        mul = num1 * num2;
+        document.getElementsByName("mul_total")[0].innerHTML = mul;
     }
     if (nombre == "divi") {
         num1 = Number(document.getElementById("numd1").value);
         num2 = Number(document.getElementById("numd2").value);
-        sum = num1 / num2;
-        document.getElementsByName("div_total")[0].innerHTML = sum;
+        div = num1 / num2;
+        document.getElementsByName("div_total")[0].innerHTML = div;
     }
 
 }

@@ -279,13 +279,17 @@ table.tablamenu td {
     text-align: center;
 }
 
-table.tablamenu .MenuEspecial {
+table.tablamenu input {
     display: none;
 }
 
 table.tablamenu td button {
     height: 70px;
     width: 100px;
+}
+
+table.tablamenu #BotonDelivery {
+    display: none;
 }
 
 table.tablamenu td button:hover {
@@ -485,7 +489,7 @@ div.creadores h6 {
     font-family: 'Cinzel', serif;
 }
 
-div.creadores h5 a {
+div.creadores h5 {
     padding: 15px;
     color: beige;
     text-decoration: none;
@@ -500,6 +504,14 @@ div.Contactanos {
 
 div.Contactanos form {
     position: static;
+}
+
+div #EnviadoContacto {
+    color: beige;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    display: none;
 }
 
 form input {

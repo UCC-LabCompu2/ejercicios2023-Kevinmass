@@ -7,6 +7,8 @@
         <meta name="autor" content="Juan Muruzabal y Kevin Massholder">
         <meta name="keywords" content="Continental, Restaurante Continental">
         <link rel="stylesheet" type="text/css" href="../Index_Style.css" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript" src="../Index_Javascript.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,10 +56,12 @@
                                 placeholder="Correo electronico" required><br>
                             <label for="PhoneReservation">Telefono Celular:</label>
                             <input type="tel" id="PhoneReservation"
-                                placeholder="Ej: 351 6517698"><br>
+                                placeholder="Ej: 351 6517698"
+                                onchange="ChequeoValores(this.id, this.value, 'numero')"><br>
                             <label for="Tamaño">Tamaño de grupo:</label>
                             <input type="number" id="Tamaño"
-                                placeholder="1-15 personas"><br>
+                                placeholder="1-15 personas"
+                                onchange="ChequeoValores(this.id, this.value, 'numero')"><br>
                             <label for="Fecha">Fecha y hora:</label>
                             <input type="datetime-local" id="Fecha"><br>
                             <label for="Notas"> Notas extra a tener en cuenta:
@@ -124,12 +128,14 @@
                         placeholder="Correo electronico" required><br>
                     <label for="Telefono">Telefono Celular: </label><br>
                     <input type="tel" id="Telefono"
-                        placeholder="Ej: 351 6517698"><br>
+                        placeholder="Ej: 351 6517698"
+                        onchange="ChequeoValores(this.id, this.value, 'numero')"><br>
                     <label for="Nota">Dejanos una nota: </label><br>
                     <textarea name id="Nota" cols="30" rows="10"
                         placeholder="Introduzca la nota" required>
                     </textarea><br>
                     <button onclick="GuardarLocalStorage()">Enviar</button>
+                    <div id="EnviadoContacto">Enviado!</div>
                 </form>
             </div>
 
