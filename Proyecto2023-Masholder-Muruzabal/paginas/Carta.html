@@ -1,193 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <title>Carta</title>
-    <meta charset="UTF-8">
-    <meta name="autor" content="Juan Muruzabal y Kevin Massholder">
-    <meta name="keywords" content="Continental, Restaurante Continental">
-    <link rel="stylesheet" type="text/css" href="Carta_Style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg"/>
-</head>
+    <head>
+        <title>Carta</title>
+        <meta charset="UTF-8">
+        <meta name="autor" content="Juan Muruzabal y Kevin Massholder">
+        <meta name="keywords" content="Continental, Restaurante Continental">
+        <link rel="stylesheet" type="text/css" href="../Index_Style.css" />
+        <script type="text/javascript" src="../Index_Javascript.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
+            rel="stylesheet">
+        <link rel="icon" type="image/jpg"
+            href="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg" />
+    </head>
 
-<body>
-    <header>
-        <div class="container">
-            <nav id="navbar">
-                <a href="../Index.html" target="_self">
-                    <img src="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg" class="logo" alt="Imagen Logo">
-                </a>
-                <ul class="nav-menu">
-                    <li class="nav-link"><a href="#ancla-carta">CARTA</a></li>
-                    <li class="nav-link"><a href="../paginas/Delivery.html">DELIVERY</a></li>
-                    <li class="nav-link"><a href="../paginas/Reserva.html">RESERVA</a></li>
-                    <li class="nav-link"><a href="#ancla-contacto">CONTACTO</a></li>
-
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container">
-        <div id="CaraPrincipal">
-            <div class="menu">
-                <table class="tablamenu">
-                    <Caption>
-                        <h6>|MENU|</h6>
-                    </Caption>
-
-                    <th></th>
-                    <th>
-                        <h6>-Ensaladas-</h6>
-                    </th>
-                    <th></th>
-
-                    <tr>
-                        <td>Caprese</td>
-                        <td></td>
-                        <td>20</td>
-                    </tr>
-
-                    <tr>
-                        <td>Caesar</td>
-                        <td></td>
-                        <td>12</td>
-                    </tr>
-
-                    <tr>
-                        <td>Kartoffelsalat</td>
-                        <td></td>
-                        <td>12</td>
-                    </tr>
-
-                    <tr>
-                        <td>Waldorf</td>
-                        <td></td>
-                        <td>10</td>
-                    </tr>
-
-
-                    <th></th>
-                    <th>
-                        <h6>-Sandwiches-</h6>
-                    </th>
-                    <th></th>
-
-                    <tr>
-                        <td>Cubano</td>
-                        <td></td>
-                        <td>40</td>
-                    </tr>
-
-                    <tr>
-                        <td>Rucula y Pera</td>
-                        <td></td>
-                        <td>60</td>
-                    </tr>
-
-                    <tr>
-                        <td>Lionel Messias</td>
-                        <td></td>
-                        <td>300</td>
-                    </tr>
-
-                    <tr>
-                        <td>Pollo Crocante</td>
-                        <td></td>
-                        <td>12</td>
-                    </tr>
-
-                    <th></th>
-                    <th>
-                        <h6>-Bebidas-</h6>
-                    </th>
-                    <th></th>
-                    <tr>
-                        <td>Moscatto........100</td>
-                        <td>Heisenberg........120</td>
-                        <td>Aperol........144</td>
-                    </tr>
-                    <tr>
-                        <td>Jagermeister........122</td>
-                        <td>Santa Julia........7</td>
-                        <td>Whisky Blend........1000</td>
-                    </tr>
-                </table>
-            </div>
-
-        </div>
-    </div>
-    <footer id="FooterUnico">
-        <div class="InfoRes">
-            <a name="ancla-contacto"></a>
-            <h3>SOBRE NOSOTROS</h3><br>
-            <h4>UBICACION</h4>
-            <h5>Av. Poeta Leopoldo Lugones 352</h5>
-            <h4>HORARIOS</h4>
-            <h5>De lunes a domingo desde las 12 p.m hasta las 1 a.m </h5>
-
-            <div class="Redes">
-                <a class="Intro"> Nuestras redes </a>
-
-                <nav id="navred">
-                    <a href="Index.html" target="_self">
-                        <img src="https://www.adverthia.com/wp-content/uploads/2020/02/instagram-logo-png-transparent-background-1024x1024-1.png"
-                            class="Logo1" alt="Link a la pagina de instagram">
-
+    <body onload="CargarLocalStorage()">
+        <header>
+            <div class="container">
+                <nav id="navbar">
+                    <a href="../Index.html" target="_self">
+                        <img
+                            src="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg"
+                            class="logo" alt="Imagen Logo">
                     </a>
-                    <a href="Index.html" target="_self">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png"
-                            class="Logo1" alt="Link a la pagina de facebook">
-                    </a>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="#CaraPrincipalCarta">CARTA</a></li>
+                        <li class="nav-link"><a href="../paginas/Delivery.html">DELIVERY</a></li>
+                        <li class="nav-link"><a href="../paginas/Reserva.html">RESERVA</a></li>
+                        <li class="nav-link"><a href="#ancla-contacto">CONTACTO</a></li>
 
+                    </ul>
                 </nav>
+            </div>
+        </header>
+
+
+        <div>
+            <input type="checkbox" id="scales" name="scales" checked>
+            <label for="scales">Scales</label>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Horns</label>
+          </div>
+        <fieldset>
+        <div class="container">
+            <div id="CaraPrincipalCarta">
+                <div class="menu">
+                    <table class="tablamenu">
+                        <caption>
+                            <h6>|MENU|</h6>
+                        </caption>
+
+                        <th></th>
+                        <th>
+                            <h6>-Ensaladas-</h6>
+                        </th>
+                        <th></th>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Caprese</label></td>
+                            <td></td>
+                            <td>20</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Caesar</label></td>
+                            <td></td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Kartoffelsalat</label></td>
+                            <td></td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Waldorf</label></td>
+                            <td></td>
+                            <td>10</td>
+                        </tr>
+
+                        <th></th>
+                        <th>
+                            <h6>-Sandwiches-</h6>
+                        </th>
+                        <th></th>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Cubano</label></td>
+                            <td></td>
+                            <td>40</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Rucula y Pera</label></td>
+                            <td></td>
+                            <td>60</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Lionel Messias</label></td>
+                            <td></td>
+                            <td>300</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Pollo Crocante</label></td>
+                            <td></td>
+                            <td>12</td>
+                        </tr>
+
+                        <th></th>
+                        <th>
+                            <h6>-Bebidas-</h6>
+                        </th>
+                        <th></th>
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Moscatto........100</label></td>
+                            </td>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Heisenberg........120</label></td>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Aperol........144</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Jagermeister........122</label></td>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Santa Julia........7</label></td>
+                            <td><input type="checkbox" class="MenuEspecial"  disabled>
+                                <label for="scales">Whisky Blend........1000</label></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <button class="MenuEspecial" onclick="Fmuestra('BotonMenu')"> Volver al Delivery</button></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
 
             </div>
         </div>
+        </fieldset>
+        <footer id="FooterUnico">
+            <div class="InfoRes">
+                <a id="ancla-contacto"></a>
+                <h3>SOBRE NOSOTROS</h3><br>
+                <h4>UBICACION</h4>
+                <h5>Av. Poeta Leopoldo Lugones 352</h5>
+                <h4>HORARIOS</h4>
+                <h5>De lunes a domingo desde las 12 p.m hasta las 1 a.m </h5>
 
-        <div class="Contacto">
+                <div class="Redes">
+                    <a class="Intro"> Nuestras redes </a>
 
-            <h3>CONTACTO</h3>
+                    <nav id="navred">
+                        <a href="Index.html" target="_self">
+                            <img
+                                src="https://www.adverthia.com/wp-content/uploads/2020/02/instagram-logo-png-transparent-background-1024x1024-1.png"
+                                class="Logo1"
+                                alt="Link a la pagina de instagram">
 
-        </div>
+                        </a>
+                        <a href="Index.html" target="_self">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png"
+                                class="Logo1" alt="Link a la pagina de facebook">
+                        </a>
 
-        <div class="Contactanos">
+                    </nav>
 
-            <form class="cuadro" action="">
-                <label for="Nombre y Apellido"> Nombre y Apellido: </label><br>
-                <input type="" placeholder="Nombre" required><br>
-                <label for="Email"> Correo electronico: </label><br>
-                <input type="email" name="email" id="" placeholder="Correo electronico" required><br>
-                <label for="Telefono Celular">Telefono Celular: </label><br>
-                <input type="number" placeholder="Ej: 351 6517698"><br>
-                <label for="Nota">Dejanos una nota: </label><br>
-                <textarea name="" id="envio" cols="30" rows="10" placeholder="Introduzca la nota" required>
+                </div>
+            </div>
 
+            <div class="Contacto">
 
-                </textarea><br>
-                <input type="submit" name="" value="enviar" class="btn">
+                <h3>CONTACTO</h3>
 
-            </form>
+            </div>
 
+            <div class="Contactanos">
 
-        </div>
+                <form class="cuadro" action>
+                    <label for="Nombre"> Nombre y Apellido: </label><br>
+                    <input type="text" id="Nombre" placeholder="Nombre" required><br>
+                    <label for="Email"> Correo electronico: </label><br>
+                    <input type="email" id="Email" name="email"
+                        placeholder="Correo electronico" required><br>
+                    <label for="Telefono">Telefono Celular: </label><br>
+                    <input type="tel" id="Telefono"
+                        placeholder="Ej: 351 6517698"><br>
+                    <label for="Nota">Dejanos una nota: </label><br>
+                    <textarea name id="Nota" cols="30" rows="10"
+                        placeholder="Introduzca la nota" required>
+                    </textarea><br>
+                    <button onclick="GuardarLocalStorage()">Enviar</button>
+                </form>
 
-        <div class="creadores">
-            <h6>Esta pagina fue hecha por :</h6>
-            <h5><a href="2203817@ucc.edu.ar" target="_top" alt="Enlace al mail de Kevin Massholder">
+            </div>
+
+            <div class="creadores">
+                <h6>Esta pagina fue hecha por :</h6>
+                <h5>
                     Kevin Massholder
-                </a>
-                <br>
-                <a href="2213345@ucc.edu.ar" target="_top" alt="Enlace al mail de Juan Muruzabal">
+                    <br>
                     Juan Ignacio Muruzabal
-                </a>
-            </h5>
-        </div>
+                </h5>
+            </div>
 
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>

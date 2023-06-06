@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,29 +19,21 @@ header {
     background-color: rgb(0, 0, 0);
 }
 
-
-
 li.nav-link {
-
     list-style: none;
     display: inline-block;
     margin-left: 60px;
     font-family: 'Cinzel', serif;
-
-
 }
-
 
 nav ul li a {
     color: beige;
     text-decoration: none;
     font-size: 15px;
-    transition: 0.5;
 }
 
-nav ul li a:hover{
-    -webkit-text-stroke: 0.5px white;
-   
+nav ul li a:hover {
+    -webkit-text-stroke: 1px white;
 }
 
 div.container {
@@ -60,19 +52,14 @@ nav#navbar {
 
 nav#navbar .logo {
     width: 70px;
-
 }
 
-
-div.nav-menu {
+ul.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
 }
-
-
-
 
 @media(max-width:1280px) {
     div.container {
@@ -80,8 +67,7 @@ div.nav-menu {
     }
 }
 
-div#CaraPrincipal {
-    margin: auto;
+div#CaraPrincipalIndex {
     text-align: center;
     box-sizing: border-box;
     align-items: center;
@@ -89,7 +75,7 @@ div#CaraPrincipal {
     display: flex;
     position: relative;
     padding: 0 5%;
-    margin-top: 70px;
+    margin: 70px auto auto;
     height: 580px;
     background-image: url(https://www.discoverlosangeles.com/sites/default/files/images/2019-01/Inn%20of%20the%20Seventh%20Ray%20dining%20room%20night.jpg);
     background-attachment: fixed;
@@ -97,16 +83,12 @@ div#CaraPrincipal {
     background-size: cover;
 }
 
-div#CaraPrincipal h1 {
-
+div#CaraPrincipalIndex h1 {
     font-size: 100px;
     color: white;
     font-weight: 500;
     font-family: 'Cinzel', serif;
-
 }
-
-
 
 div#Carta {
     margin: auto;
@@ -122,7 +104,6 @@ div#CartaDerecha {
     height: 450px;
     background-color: black;
     align-content: center;
-
 }
 
 div.Cartalink {
@@ -142,13 +123,13 @@ div.Cartalink a {
     transition: 1.5s;
 }
 
-div.Cartalink a:hover{
+div.Cartalink a:hover {
     -webkit-text-stroke: 1px white;
     color: transparent;
 }
 
 
-div.CartaDescripcion{
+div.CartaDescripcion {
     text-align: center;
 }
 
@@ -159,7 +140,6 @@ div.CartaDescripcion a {
     text-decoration: none;
     font-size: 15px;
     font-family: 'Cinzel', serif
-    
 }
 
 div#Delivery {
@@ -193,16 +173,17 @@ div.Deliverylink a {
     font-family: 'Cinzel', serif;
     transition: 1.5s;
 }
-div.Deliverylink a:hover{
+
+div.Deliverylink a:hover {
     -webkit-text-stroke: 1px white;
     color: transparent;
 }
 
-div .DeliveryDescripcion{
+div .DeliveryDescripcion {
     text-align: center;
 }
 
-div .DeliveryDescripcion a{
+div .DeliveryDescripcion a {
     color: beige;
     display: inline-block;
     padding: 60px;
@@ -243,16 +224,16 @@ div .Reservalink a {
     transition: 1.5s;
 }
 
-div .Reservalink a:hover{
+div .Reservalink a:hover {
     -webkit-text-stroke: 1px white;
     color: transparent;
 }
 
-div .ReservaDescripcion{
+div .ReservaDescripcion {
     text-align: center;
 }
 
-div .ReservaDescripcion a{
+div .ReservaDescripcion a {
     color: beige;
     display: inline-block;
     padding: 60px;
@@ -261,6 +242,176 @@ div .ReservaDescripcion a{
     font-family: 'Cinzel', serif
 }
 
+/*Pagina Carta*/
+
+div#CaraPrincipalCarta {
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 0 5%;
+    margin: 70px auto auto;
+    height: 1000px;
+    background-image: url(https://www.thedailymeal.com/img/gallery/the-2-plate-rules-you-should-follow-at-fine-dining-restaurants/l-intro-1670452199.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.menu {
+    margin-top: 70px;
+    font-family: 'Lato', sans-serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 800px;
+    background-color: rgba(96, 100, 105, 0.726);
+}
+
+table.tablamenu caption h6 {
+    font-size: xx-large;
+    scale: 100%;
+}
+
+table.tablamenu td {
+    text-align: center;
+}
+
+table.tablamenu .MenuEspecial {
+    display: none;
+}
+
+table.tablamenu td button {
+    height: 70px;
+    width: 100px;
+}
+
+table.tablamenu td button:hover {
+    -webkit-text-stroke: 1px white;
+}
+
+table.tablemenu th {
+    font-size: xx-large;
+    scale: 150%;
+}
+
+table.tablamenu {
+    text-align: center;
+    border: 10px inset rgb(153, 144, 144);
+}
+
+/*Pagina delivery*/
+
+div#CaraPrincipalDelivery {
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 0 5%;
+    margin: 70px auto auto;
+    height: 1000px;
+    background-image: url(https://www.sfceurope.com/media/image/96/9b/b1/Optimized-AdobeStock_278243908-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.registrodelivery {
+    padding: 35px;
+    height: 800px;
+    width: 900px;
+    background-color: rgba(86, 86, 86, 0.726);
+}
+
+div .bebidas {
+    padding: 40px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+div .bebidas label {
+    font-size: 15px;
+}
+
+div .comida {
+    padding: 40px;
+}
+
+div .comida button {
+    height: 70px;
+    width: 100px;
+}
+
+div .comida button:hover {
+    -webkit-text-stroke: 1px white;
+}
+
+div.registrodelivery h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+/*Pagina reserva*/
+
+div#CaraPrincipalReserva {
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 0 5%;
+    margin: 70px auto auto;
+    height: 800px;
+    background-image: url(https://tiger-recruitment.com/wp-content/uploads/2020/01/iStock-1175240175-1-scaled.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.registroreserva {
+    padding: 40px;
+    height: 600px;
+    width: 800px;
+    background-color: rgba(86, 86, 86, 0.726);
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+div.registroreserva h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+div.reserva {
+    opacity: 0;
+    display: block;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+}
+
+div.numeroreserva h3 {
+    padding: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+/*Footer*/
 footer#FooterUnico {
     text-align: center;
     align-items: center;
@@ -274,13 +425,13 @@ footer#FooterUnico {
     background-color: rgb(10, 10, 10);
 }
 
-div.InfoRes{
-    
+div.InfoRes {
+
     display: inline-block;
     padding: 5px;
 }
 
-div.Redes{
+div.Redes {
     display: inline-block;
     padding: 30px;
     align-items: center;
@@ -288,14 +439,14 @@ div.Redes{
 
 }
 
-div.InfoRes h3{
+div.InfoRes h3 {
     font-size: 35px;
     color: white;
     font-weight: 500;
     font-family: 'Cinzel', serif;
 }
 
-div.InfoRes h4{
+div.InfoRes h4 {
     padding: 5px;
     font-size: 25px;
     color: white;
@@ -303,7 +454,7 @@ div.InfoRes h4{
     font-family: 'Cinzel', serif;
 }
 
-div.InfoRes h5{
+div.InfoRes h5 {
     padding: 5px;
     font-size: 18px;
     color: white;
@@ -311,69 +462,47 @@ div.InfoRes h5{
     font-family: 'Cinzel', serif;
 }
 
-div.Divfooter1 {
-    float: left;
-    height: 100px;
-    width: 25%;
-
-    background-color: black;
-}
-
-div.Redes a.Intro{
+div.Redes a.Intro {
     font-size: 15px;
     color: white;
     font-weight: 500;
     font-family: 'Cinzel', serif;
 }
 
-nav#navred  img.Logo1{
-   
+nav#navred img.Logo1 {
     height: 30px;
     width: 30px;
 }
 
-
-
-div.creadores{
+div.creadores {
     padding: 110px;
 }
 
-div.creadores h6{
+div.creadores h6 {
     color: beige;
     text-decoration: none;
     font-size: 15px;
     font-family: 'Cinzel', serif;
-    
 }
 
-div.creadores h5 a{
+div.creadores h5 a {
     padding: 15px;
     color: beige;
     text-decoration: none;
     font-size: 10px;
     font-family: 'Cinzel', serif;
-    transition: 0.5;
 }
 
-div.creadores h5 a:hover{
-    -webkit-text-stroke: 0.5px white;
-
-}
-
-div.Contactanos{
-
+div.Contactanos {
     display: block;
     align-items: center;
-    
 }
 
-div.Contactanos form{
+div.Contactanos form {
     position: static;
-
 }
 
-form input{
-
+form input {
     width: 30%;
     border: none;
     outline: none;
@@ -383,10 +512,42 @@ form input{
     font-family: 'Cinzel', serif;
     margin-bottom: 0.7rem;
     border-radius: 5px;
-
 }
 
-form input.btn{
+form textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+}
+
+
+form label {
+    padding: 50px;
+    color: beige;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+div.Contacto {
+    display: block;
+    padding: 5px;
+}
+
+div.Contacto h3 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+button {
     width: 10%;
     border: none;
     outline: none;
@@ -397,48 +558,3 @@ form input.btn{
     margin-bottom: 0.7rem;
     border-radius: 5px;
 }
-
-
-
-form textarea{
-
-    border: none;
-    resize: none;
-    outline: none;
-    background: #191919;
-    color: #fff;
-    font-size: 15px;
-    font-family: 'Cinzel', serif;
-    margin-bottom: 0.7rem;
-    border-radius: 5px;
-
-
-}
-
-
-form label{
-    padding: 50px;
-    color: beige;
-    text-decoration: none;
-    font-size: 10px;
-    font-family: 'Cinzel', serif;
-
-}
-
-div.Contacto{
-
-    display: block;
-    padding: 5px;
-
-}
-
-div.Contacto h3{
-
-    font-size: 35px;
-    color: white;
-    font-weight: 500;
-    font-family: 'Cinzel', serif;
-
-}
-
-
