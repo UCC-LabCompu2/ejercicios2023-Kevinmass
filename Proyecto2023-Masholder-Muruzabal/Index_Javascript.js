@@ -59,6 +59,10 @@ Fmuestra = (valor) => {
         localStorage.setItem("DirectionDeliveryLS", direccion);
         llave = '1';
         localStorage.setItem("LlaveLS", llave);
+        document.getElementById("NameDelivery").value = "";
+        document.getElementById("EmailDelivery").value = "";
+        document.getElementById("PhoneDelivery").value = "";
+        document.getElementById("DirectionDelivery").value = "";
         console.log(localStorage.getItem("NameDeliveryLS"));
         window.open("../paginas/Carta.html", "_self");
     } else if (valor === 'BotonMenu') {
@@ -76,12 +80,6 @@ Fmuestra = (valor) => {
  */
 DeliveryOnload = () => {
     let Nombre, Email, Telefono, direccion;
-    if (localStorage.getItem("LlaveLS") === null) {
-        document.getElementById("NameDelivery").value = "";
-        document.getElementById("EmailDelivery").value = "";
-        document.getElementById("PhoneDelivery").value = "";
-        document.getElementById("DirectionDelivery").value = "";
-    } else if (localStorage.getItem("LlaveLS") === '1') {
         Nombre = localStorage.getItem("NameDeliveryLS");
         Email = localStorage.getItem("EmailDeliveryLS");
         Telefono = localStorage.getItem("PhoneDeliveryLS");
@@ -90,7 +88,6 @@ DeliveryOnload = () => {
         document.getElementById("EmailDelivery").value = Email;
         document.getElementById("PhoneDelivery").value = Telefono;
         document.getElementById("DirectionDelivery").value = direccion;
-    }
 }
 
 //CartaOnload
@@ -131,4 +128,63 @@ ChequeoValores = (id, valor, tipo) => {
             document.getElementById(id).value = "";
         }
     }
+}
+
+
+//AnimacionDepreparacion
+/**
+ * Funcion que muestra una pelotita rebotando dentro del canvas
+ * @method animacion
+ */
+
+animacion = () => {
+
+    const RADIUS = 3;
+    const WIDTH = 50;
+    const HEIGHT = 50;
+    const SPEED = 1;
+
+    const coord = { x: WIDTH / 2, y: HEIGHT / 2 };
+    const delta = {
+        x: Math.random() * SPEED * 2 - SPEED,
+        y: Math.random() * SPEED * 2 - SPEED
+    };
+
+    const cnv = document.getElementById('canvas');
+    const ctx = cnv.getContext('2d');
+
+    tick=()=> {
+        const newx = coord.x + delta.x;
+        const newy = coord.y + delta.y;
+
+        if (newx > WIDTH - RADIUS || newx < RADIUS)
+            delta.x = -delta.x;
+
+        if (newy > HEIGHT - RADIUS || newy < RADIUS)
+            delta.y = -delta.y;
+
+        coord.x = newx;
+        coord.y = newy;
+
+        requestAnimationFrame(draw);
+        setTimeout(tick, 10);
+    }
+
+    draw=()=> {
+        ctx.fillStyle = "white";
+        ctx.clearRect(0, 0, WIDTH, HEIGHT);
+        ctx.beginPath();
+        ctx.arc(coord.x, coord.y, RADIUS, 0, Math.PI * 2, 1);
+        ctx.fill();
+    }
+    tick();
+}
+
+//AnimacionDepreparacion
+/**
+ * Funcion que habilita a la pagina para mostrar la animacion
+ * @method CargaAnim
+ */
+CargaAnim = () => {
+    document.getElementsByClassName('can')[0].style.display = "block";
 }

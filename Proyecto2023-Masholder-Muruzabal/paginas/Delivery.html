@@ -19,7 +19,7 @@
             href="Recursos/WhatsApp Image 2023-05-08 at 15.11.13.jpeg" />
     </head>
 
-    <body onload="CargarLocalStorage()">
+    <body onload="CargarLocalStorage(); DeliveryOnload()">
         <header>
             <div class="container">
                 <nav id="navbar">
@@ -46,7 +46,7 @@
 
                     <div id="delivery">
 
-                        <form class="cuadro" action>
+                        <form class="cuadro" onsubmit="return false">
                             <label for="NameDelivery"> Nombre y Apellido:</label><br>
                             <input type="text" id="NameDelivery"
                                 placeholder="Nombre" required><br>
@@ -73,8 +73,14 @@
                                 required>
                             </textarea><br>
                             <input type="submit" name value="enviar"
-                                class="btn">
+                                class="btn" onclick="CargaAnim()">
                         </form>
+
+                        <div class="can">
+                            <h1>Su orden esta siendo preparada !!</h1>
+                            <canvas width="50" height="50" id="canvas"></canvas>
+                            <script> animacion() </script>
+                        </div>
 
                     </div>
                 </div>
@@ -117,7 +123,7 @@
 
             <div class="Contactanos">
 
-                <form class="cuadro" action>
+                <form class="cuadro" onsubmit="return false">
                     <label for="Nombre"> Nombre y Apellido: </label><br>
                     <input type="text" id="Nombre" placeholder="Nombre"
                         required><br>

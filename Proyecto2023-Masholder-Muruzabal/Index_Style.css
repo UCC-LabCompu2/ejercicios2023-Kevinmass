@@ -335,10 +335,35 @@ div .comida {
     padding: 40px;
 }
 
+div.can {
+    display: none;
+    padding: 3px;
+    margin: 32px;
+}
+
+#canvas {
+    border: solid 5px white;
+    background: black;
+}
+
+
+div.can h1 {
+
+    color: beige;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+
+
+}
+
+
 div .comida button {
     height: 70px;
     width: 100px;
 }
+
+
 
 div .comida button:hover {
     -webkit-text-stroke: 1px white;
@@ -387,7 +412,7 @@ div.registroreserva h2 {
     font-family: 'Cinzel', serif;
 }
 
-div#reserva {
+div.reserva {
     opacity: 0;
     display: block;
     align-items: center;
