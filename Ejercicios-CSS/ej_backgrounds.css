@@ -1,0 +1,6 @@
+body{
+    background-color: rgb(255, 198, 113);
+background-image: url(imagenes/fondo_mario.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}

@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    background: linear-gradient( 135deg, #f5e78f 30%, #ff7300 100%);
+}
+
+div {
+    border: 2px solid black;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 5px 30px;
+    box-shadow: 10px 10px 5px black;
+}
+
+#principal {
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+}
+
+.especial{
+   font-size: larger;
+}
+
+div h3{
+    text-shadow: 1px 1px 1px black;
+}
